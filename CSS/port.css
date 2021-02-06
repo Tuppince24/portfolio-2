@@ -1,0 +1,96 @@
+.main_container {
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "h1 h1 h1" 
+    "main_content main_content main_content"
+    "card card card";
+    grid-gap: 5rem;
+    width: 100%;
+}
+
+.main_container h1{
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: grid;
+    grid-area: h1;
+    margin: 0 12px;
+}
+.main_content{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 12px;
+    width: 100%;
+    grid-area: main_content;
+    align-items: center;
+    justify-content: center;
+
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-image: linear-gradient(to left, #f77062 0%, #fe5196 100%);
+    border-radius: 15px;
+    height: 60vh;
+    width: 25%;
+    grid-area: card;
+    display: inline-grid;
+ }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.979);
+    cursor: pointer;
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  .car img{
+      max-width: large;
+      border-radius: 15px;
+}
+
+@media screen and (max-width:768px){
+    .main_container{
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "h1" 
+        "main_content"
+        "card"
+        "card"
+        "card";
+    }
+}
+
+.row{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "img";
+}
+
+.img{
+    grid-area: img;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    height: 100%;
+    width: fit-content;
+
+}

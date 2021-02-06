@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuppince HW2</title>
+</head>
+<body>
+    <!--navagation bar-->
+    <!--see why CSS not working to change color in nav bar-->
+    <header>
+        <div class="fixed-top">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-dark p-4">
+                <h5 class="text-white h4">Menu:</h5>
+                <ul id="nav-bar-list">
+                    <li class="nav-bar-list-item">
+                        <span class="text-muted"><a href="index.html">Home</a></span>
+                    </li>
+                    <li class="nav-bar-list-item">
+                        <span class="text-muted"><a href="portfolio.html">Portfolio</a></span>
+                    </li>
+                    <li class="nav-bar-list-item">
+                        <span class="text-muted"><a href="contact.html">contact</a></span>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <h1 id="myName">Javonte Tuppince </h1>
+            </nav>
+          </div>
+    </header>
+
+    <!--making space-->
+    <top>
+        <div class="row">
+            <div class="col-md-12">
+                <br> <br> <br> <br>
+            </div>
+        </div>
+    </top>
+
+    <!--contact form-->
+    <section class="container" id="contact">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Contact</h1>
+            </div>
+
+        </div>
+
+        <!--row 2-->
+        <div class="row">
+            <div class="col-md-12">
+                <form id="formlist" action="MAILTO:taetupp47@gmail.com" method="POST" enctype="text/plain">
+                    <div>
+                      <label for="first name">First Name</label>
+                      <input type="text" name="first" placeholder="first name" required>
+                    </div>
+                    <div>
+                      <label for="last name">Last Name</label>
+                      <input type="text" name="last" placeholder="last name" required>
+                    </div>
+                    <div class="email">
+                      <label for="eamil">Email</label>
+                      <input type="text" name="mail" placeholder="email" required>
+                    </div>
+                    <section class="number">
+                      <label for="number">Number</label>
+                      <input type="number" name="number" placeholder="number">
+                    </section>
+                    <section class="message">
+                      <label for="message">Message</label>
+                      <textarea placeholder="message" name="message" rows="5" cols="30"></textarea>
+                    </section>
+                    <div class="submit">
+                        <input class="btn btn-primary" type="submit" value="Submit">
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </section>
+
+
+   
+
+
+
+
+    <script type="text/javascript" src="#"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>

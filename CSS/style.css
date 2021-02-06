@@ -1,0 +1,41 @@
+/* index2.html */
+.main{
+    background-image: url(../img/background\ _2.jpg);
+    height: 100%;
+}
+
+.main_content{
+    text-align: center;
+}
+.main_content img{
+    height: 80%;
+    width: 80%;
+
+}
+
+.main_article p{
+    margin-top: -1rem;
+    font-size: 2rem;
+    font-weight: 100;
+    color: #fff;
+    display: inline;
+}
+
+.main_article br{
+    background-color: #141414;
+}
+@media screen and (max-width:768px){
+    .main_article p{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+/*footer*/
+.footer{
+    background-image: url("../img/background\ _2.jpg");
+}
+
+
+

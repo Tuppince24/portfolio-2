@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/mainstlye.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="https://icons8.com/icons/set/github" target="blank" id="navbar_logo"><img src="./img/r2-d2-64.png" height="40"> Javonte</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="portfolio.html" class="navbar_links">Portfolio</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="https://drive.google.com/file/d/186vdTluBXyCMhgMpouNIJwz-lxVbfC7p/view" target="blank" class="navbar_links">Resume</a>
+                </li>
+                <li class="navbar_btn">
+                    <a class="button" id="showModal">contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--content of my page-->
+    <section class="main">
+        <div class="main_container">
+            <div class="main_content">
+                <h1 class="animate__backInLeft">Hi, I'M Javonte Tuppince</h1>
+                <h2 class="animate__backInLeft">Full Stack Developer</h2>
+                <p class="animate__backInLeft">Get to know me</p>
+                <button class="main_btn animate__backInLeft"><a href="index2.html">About me</a></button>
+                <ul class="main_menu">
+                    <li class="main_item">
+                        <a href="https://github.com/Tuppince24" target="blank" class="main_links"><img src="./img/github.png" alt="github"></a>
+                    </li>
+                    <li class="main_item">
+                        <a href="https://www.linkedin.com/in/javonte-tuppince-1a29681a9" target="blank" class="main_links"><img src="./img/blue.png" alt="indeed" width="55"> </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main_img-container">
+               <img src="./img/program2.svg.svg" alt="Javonte" id="main_img">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer_container"></div>
+    </footer>
+
+    <!--modal-->
+    <div class="modal modal--hidden">
+        <div class="modal_content">
+            <div class="modal__close-bar">
+                <span>X</span>
+            </div>
+           <h3>contact me </h3>
+           <hr>
+           <p>Eamail: taetupp47@gmail.com</p>
+           <p>Phone: (804)920-5228</p>
+           <!--Form-->
+            <form class="form_container" id="form-data" action="MAILTO:taetupp47@gmail.com" method="POST" enctype="text/plain">
+                <div class="form_content">
+                   <label for="name">Name</label>
+                   <input type="text" name="name">
+                   <br>
+                   <label for="email">Email address</label>
+                   <input type="email" name="email">
+                   <small id="emailHelp">We'll never share your email with anyone else.</small>
+                   <input type="submit" value="Submit">
+               </div>        
+            </form>
+        </div> 
+    </div>
+
+
+
+
+    <script src="./js/add.js"></script>
+</body>
+</html>
