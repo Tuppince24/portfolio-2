@@ -1,12 +1,15 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
+}
+body{
+    background-image: url(../img/background\ _2.jpg);
 }
 
 .main_container{
     width: 90%;
-    height: 100%;
+    height: 100vh;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
@@ -49,6 +52,7 @@
     grid-area: main_content;
     align-items: center;
     justify-content: center;
+    overflow-x: scroll;
 
 }
 .card {
@@ -57,8 +61,8 @@
     transition: 0.3s;
     background-image: linear-gradient(to left, #f77062 0%, #fe5196 100%);
     border-radius: 15px;
-    height: 30vh;
     width: 100%;
+    object-fit: cover;
  }
   
        /* On mouse-over, add a deeper shadow */
