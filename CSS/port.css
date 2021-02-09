@@ -1,14 +1,34 @@
-.main_container {
-    display: grid;
-    grid-template-columns: 1fr  1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-    "h1 h1 h1" 
-    "main_content main_content main_content"
-    "card card card";
-    grid-gap: 5rem;
-    width: 100%;
+*{
+    margin: 0;
+    padding: 0;
+    
 }
+body{
+    background-image: url(../img/background\ _2.jpg);
+}
+
+.main_container{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
+    grid-template-rows: repeat(auto-fit);
+    grid-gap: 20px;
+}
+
+.item{
+    background: #58d5f6;
+    color: white;
+    padding: 10px;
+    height: 50%;
+}
+
+.item:nth-child(even){
+    background: #236fc8;
+}
+
+
 
 .main_container h1{
     font-size: 4rem;
@@ -20,7 +40,6 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     display: grid;
-    grid-area: h1;
     margin: 0 12px;
 }
 .main_content{
@@ -33,6 +52,7 @@
     grid-area: main_content;
     align-items: center;
     justify-content: center;
+    overflow-x: scroll;
 
 }
 .card {
@@ -41,19 +61,17 @@
     transition: 0.3s;
     background-image: linear-gradient(to left, #f77062 0%, #fe5196 100%);
     border-radius: 15px;
-    height: 60vh;
-    width: 25%;
-    grid-area: card;
-    display: inline-grid;
+    width: 100%;
+    object-fit: cover;
  }
   
-  /* On mouse-over, add a deeper shadow */
+       /* On mouse-over, add a deeper shadow */
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.979);
     cursor: pointer;
   }
   
-  /* Add some padding inside the card container */
+        /* Add some padding inside the card container */
   .container {
     padding: 2px 16px;
   }
@@ -63,7 +81,7 @@
       border-radius: 15px;
 }
 
-@media screen and (max-width:768px){
+/* @media screen and (max-width:768px){
     .main_container{
         height: fit-content;
         display: grid;
@@ -93,4 +111,4 @@
     height: 100%;
     width: fit-content;
 
-}
+} */
