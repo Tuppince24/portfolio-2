@@ -4,7 +4,7 @@
     
 }
 body{
-    background-image: url(../img/background\ _2.jpg);
+    background-image: url(../img/background\ _1.jpg);
 }
 
 .main_container{
@@ -18,17 +18,21 @@ body{
 }
 
 .item{
-    background: #58d5f6;
     color: white;
     padding: 10px;
-    height: 50%;
+    height: 65%;
 }
 
 .item:nth-child(even){
-    background: #236fc8;
+    color: #000000;
 }
 
-
+p{
+    animation: backInLeft;
+    animation-duration: 10s;
+    font-weight: bold;
+    margin: 20px;
+}
 
 .main_container h1{
     font-size: 4rem;
